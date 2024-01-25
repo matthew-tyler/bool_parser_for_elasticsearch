@@ -1,0 +1,3 @@
+# Boolean Expression Parser for Elasticsearch
+
+This tool is a straightforward parser designed to convert boolean expressions into Elasticsearch bool queries. Specifically, it can parse expressions like "(Tiger OR "Big Cat") AND Jungle AND prowl" into a format compatible with Elasticsearch. The parser employs a single-character lookahead tokenizer and the shunting yard algorithm to transform these boolean expressions into postfix notation. This notation is particularly well-suited for easy conversion into Elasticsearch bool queries. Currently, the parser is in its initial stages, lacking tests and supporting only the AND/OR operators.
